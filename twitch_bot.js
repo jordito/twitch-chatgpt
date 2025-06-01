@@ -89,7 +89,7 @@ export class TwitchBot {
         try {
             // Make a call to the OpenAI TTS model
             const mp3 = await this.openai.audio.speech.create({
-                model: 'gpt-4o-mini-tts',
+                model: 'tts-1-hd',
                 voice: 'sage',
                 input: text,
             });
